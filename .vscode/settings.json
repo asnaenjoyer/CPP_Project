@@ -1,5 +1,7 @@
 {
     "cmake.configureArgs": [
+        "-DCMAKE_MAKE_PROGRAM=D:/msys/ucrt64/bin/ninja.exe",
+        "-DCMAKE_CXX_COMPILER=D:/msys/ucrt64/bin/g++.exe",
         "-DCMAKE_TOOLCHAIN_FILE=D:/vcpkg/scripts/buildsystems/vcpkg.cmake",
         "-DVCPKG_TARGET_TRIPLET=x64-mingw-static",
         "-DVCPKG_HOST_TRIPLET=x64-mingw-static",
