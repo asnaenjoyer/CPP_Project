@@ -1,0 +1,14 @@
+{
+  "D:/msys/ucrt64/bin/x86_64-w64-mingw32-g++.exe" : 
+  {
+    "hash" : "84e72f67974a4856c343e3acf4cdcf4719d3a3bb",
+    "size" : 3300560,
+    "timestamp" : 1789924940
+  },
+  "D:/msys/ucrt64/bin/x86_64-w64-mingw32-gcc.exe" : 
+  {
+    "hash" : "a2400a4bc39bcdda58c9510a2e00215783449eb0",
+    "size" : 3297488,
+    "timestamp" : 1789924940
+  }
+}

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/sasha/Desktop/Project/build",
+  "command": "D:\\msys\\ucrt64\\bin\\g++.exe -isystem C:/Users/sasha/Desktop/Project/build/vcpkg_installed/x64-mingw-static/include -g -std=c++17 -o CMakeFiles\\Project.dir\\src\\main.cpp.obj -c C:\\Users\\sasha\\Desktop\\Project\\src\\main.cpp",
+  "file": "C:/Users/sasha/Desktop/Project/src/main.cpp",
+  "output": "C:/Users/sasha/Desktop/Project/build/CMakeFiles/Project.dir/src/main.cpp.obj"
+}
+]

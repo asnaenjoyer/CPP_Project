@@ -1,0 +1,47 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake: Configure",
+            "type": "process",
+            "command": "D:\\msys\\ucrt64\\bin\\cmake.exe",
+            "args": [
+                "-S", "${workspaceFolder}",
+                "-B", "${workspaceFolder}\\build",
+                "-G", "Ninja",
+                "-DCMAKE_MAKE_PROGRAM=D:/msys/ucrt64/bin/ninja.exe",
+                "-DCMAKE_CXX_COMPILER=D:/msys/ucrt64/bin/g++.exe",
+                "-DCMAKE_TOOLCHAIN_FILE=D:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+                "-DVCPKG_TARGET_TRIPLET=x64-mingw-static",
+                "-DVCPKG_HOST_TRIPLET=x64-mingw-static",
+                "-DVCPKG_OVERLAY_TRIPLETS=D:/vcpkg/triplets/community"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "CMake: Build",
+            "type": "process",
+            "command": "D:\\msys\\ucrt64\\bin\\cmake.exe",
+            "args": [
+                "--build", "${workspaceFolder}\\build"
+            ],
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "CMake: Run",
+            "type": "process",
+            "command": "${workspaceFolder}\\build\\bin\\Project.exe",
+            "dependsOn": "CMake: Build",
+            "dependsOrder": "sequence",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "cmake.configureArgs": [
+        "-DCMAKE_TOOLCHAIN_FILE=D:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DVCPKG_TARGET_TRIPLET=x64-mingw-static",
+        "-DVCPKG_HOST_TRIPLET=x64-mingw-static",
+        "-DVCPKG_OVERLAY_TRIPLETS=D:/vcpkg/triplets/community"
+    ]
+}
