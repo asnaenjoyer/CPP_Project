@@ -3,7 +3,7 @@
 #include <SDL3/SDL.h>
 
 #include "ExpenseManager.hpp"
-#include "ExpenseView.hpp"
+#include "views/ExpenseView.hpp"
 
 class Application
 {
