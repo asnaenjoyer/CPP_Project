@@ -10,7 +10,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 find_package(SDL3 CONFIG REQUIRED)
 find_package(imgui CONFIG REQUIRED)
 
-add_executable(Project src/main.cpp)
+add_executable(Project src/main.cpp src/ExpenseManager.cpp src/ExpenseView.cpp src/Application.cpp)
+
+target_include_directories(Project PRIVATE "${CMAKE_SOURCE_DIR}/include")
 
 target_link_libraries(Project PRIVATE
     SDL3::SDL3
