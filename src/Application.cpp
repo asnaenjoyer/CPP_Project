@@ -17,7 +17,10 @@ bool Application::init()
     if (!SDL_Init(SDL_INIT_VIDEO))
         return false;
 
-    window = SDL_CreateWindow("Expense Tracker", 1000, 700, SDL_WINDOW_RESIZABLE);
+    window = SDL_CreateWindow("Expense Tracker", 800, 600, SDL_WINDOW_RESIZABLE | SDL_WINDOW_BORDERLESS);
+    SDL_SetWindowResizable(window, false);
+
+
     if (!window)
         return false;
 
@@ -107,6 +110,9 @@ int Application::run()
 
     while (running)
     {
+        if (!expenseView.isOpen())
+            running = false;
+
         processEvents();
         render();
     }

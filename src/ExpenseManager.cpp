@@ -48,3 +48,10 @@ const std::vector<Category>& ExpenseManager::getCategories() const
 {
     return categories;
 }
+
+const Category* ExpenseManager::getCategoryById(unsigned int id) const
+{
+    auto it = std::find_if(categories.begin(), categories.end(),
+        [id](const Category& c) { return c.getId() == id; });
+    return (it != categories.end()) ? &(*it) : nullptr;
+}

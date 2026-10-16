@@ -30,4 +30,6 @@ class ExpenseManager
 
         const std::vector<Category>& getCategories() const;
 
+        const Category* getCategoryById(unsigned int id) const;
+
 };
