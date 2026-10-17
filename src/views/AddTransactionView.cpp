@@ -70,7 +70,7 @@ void AddTransactionView::render()
             currency,
             date
         );
-
+        manager.saveToFile("data/data.json");
         transactionName[0] = '\0';
         amount[0] = '\0';
 

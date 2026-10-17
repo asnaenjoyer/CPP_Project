@@ -25,8 +25,17 @@ void TransactionListView::render()
 
         std::vector<unsigned int> transactionsToDelete;
 
+        double total = 0.0;
+
         for (const auto& transaction : transactions)
         {
+            double amount = transaction.getAmountMinorUnits() / 100.0;
+
+            if (transaction.getType() == TransactionType::INCOME)
+                total += amount;
+            else
+                total -= amount;
+
             ImGui::TableNextRow();
 
             ImGui::TableSetColumnIndex(0);
@@ -37,7 +46,8 @@ void TransactionListView::render()
             ImGui::TextUnformatted(category ? category->getName().c_str() : "Unknown");
 
             ImGui::TableSetColumnIndex(2);
-            ImGui::Text("%.2f %s",
+            ImGui::Text("%s%.2f %s",
+                transaction.getType() == TransactionType::INCOME ? "+" : "-",
                 transaction.getAmountMinorUnits() / 100.0,
                 transaction.getCurrency().c_str());
 
@@ -54,8 +64,14 @@ void TransactionListView::render()
         }
 
         ImGui::EndTable();
+        
+        ImGui::Separator();
+        ImGui::Text("Total: %.2f UAH", total);
 
         for (unsigned int id : transactionsToDelete)
             manager.removeTransaction(id);
+
+        if (!transactionsToDelete.empty())
+            manager.saveToFile("data/data.json");
     }
 }

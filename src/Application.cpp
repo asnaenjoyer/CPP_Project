@@ -38,6 +38,11 @@ bool Application::init()
     if (!ImGui_ImplSDLRenderer3_Init(renderer))
         return false;
 
+    if (!expenseManager.loadFromFile("data/data.json"))
+    {
+        // Handle error loading data
+    }
+    
     return true;
 }
 

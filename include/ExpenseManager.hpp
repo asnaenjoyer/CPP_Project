@@ -32,4 +32,6 @@ class ExpenseManager
 
         const Category* getCategoryById(unsigned int id) const;
 
+        bool saveToFile(const std::string& path) const;
+        bool loadFromFile(const std::string& path);
 };

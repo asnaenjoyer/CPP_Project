@@ -9,6 +9,7 @@
                 "sdl3-binding",
                 "sdl3-renderer-binding"
             ]
-        }
+        },
+        "nlohmann-json"
     ]
 }

@@ -1,6 +1,10 @@
 #include "ExpenseManager.hpp"
+
 #include <algorithm>
 #include <iterator>
+#include <fstream>
+
+#include <nlohmann/json.hpp>
 
 unsigned int ExpenseManager::nextTransactionId = 1;
 unsigned int ExpenseManager::nextCategoryId = 1;
@@ -54,4 +58,101 @@ const Category* ExpenseManager::getCategoryById(unsigned int id) const
     auto it = std::find_if(categories.begin(), categories.end(),
         [id](const Category& c) { return c.getId() == id; });
     return (it != categories.end()) ? &(*it) : nullptr;
+}
+
+bool ExpenseManager::saveToFile(const std::string& path) const
+{
+    nlohmann::json j;
+    j["categories"] = nlohmann::json::array();
+    j["transactions"] = nlohmann::json::array();
+
+    for (const auto& category : categories)
+    {
+        j["categories"].push_back({
+            {"id", category.getId()},
+            {"name", category.getName()}
+        });
+    }
+
+    for (const auto& transaction : transactions)
+    {
+        j["transactions"].push_back({
+            {"id", transaction.getId()},
+            {"categoryId", transaction.getCategoryId()},
+            {"amountMinorUnits", transaction.getAmountMinorUnits()},
+            {"name", transaction.getName()},
+            {"type", transaction.getType() == TransactionType::INCOME ? "income" : "expense"},
+            {"currency", transaction.getCurrency()},
+            {"date", transaction.getDate()}
+        });
+    }
+
+    std::ofstream file(path);
+
+    if (!file.is_open())
+        return false;
+
+    file << j.dump(4);
+    return file.good();
+
+}
+
+bool ExpenseManager::loadFromFile(const std::string& path)
+{
+    std::ifstream file(path);
+
+    if (!file.is_open())
+        return false;
+
+    try
+    {
+        nlohmann::json j;
+        file >> j;
+
+        std::vector<Category> loadedCategories;
+        std::vector<Transaction> loadedTransactions;
+
+        for (const auto& item : j.at("categories"))
+        {
+            loadedCategories.emplace_back(
+                item.at("id").get<unsigned int>(),
+                item.at("name").get<std::string>()
+            );
+        }
+
+        for (const auto& item : j.at("transactions"))
+        {
+            TransactionType type =
+                item.at("type").get<std::string>() == "income"
+                    ? TransactionType::INCOME
+                    : TransactionType::EXPENSE;
+
+            loadedTransactions.emplace_back(
+                item.at("id").get<unsigned int>(),
+                item.at("categoryId").get<unsigned int>(),
+                item.at("amountMinorUnits").get<std::int64_t>(),
+                item.at("name").get<std::string>(),
+                type,
+                item.at("currency").get<std::string>(),
+                item.at("date").get<std::string>()
+            );
+        }
+
+        categories = std::move(loadedCategories);
+        transactions = std::move(loadedTransactions);
+
+        nextCategoryId = 1;
+        for (const auto& category : categories)
+            nextCategoryId = std::max(nextCategoryId, category.getId() + 1);
+
+        nextTransactionId = 1;
+        for (const auto& transaction : transactions)
+            nextTransactionId = std::max(nextTransactionId, transaction.getId() + 1);
+
+        return true;
+    }
+    catch (const nlohmann::json::exception&)
+    {
+        return false;
+    }
 }

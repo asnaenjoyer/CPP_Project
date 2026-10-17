@@ -19,6 +19,7 @@ void CategoryView::render()
     if (ImGui::Button("Add") && categoryName[0] != '\0')
     {
         manager.addCategory(categoryName);
+        manager.saveToFile("data/data.json");
         categoryName[0] = '\0';
     }
 
@@ -33,10 +34,16 @@ void CategoryView::render()
         if (ImGui::Button("Delete"))
         {
             categoryToDelete = category.getId();
-            ImGui::OpenPopup("Confirm Delete");
+            openDeletePopup = true;
         }
 
         ImGui::PopID();
+    }
+
+    if (openDeletePopup)
+    {
+        ImGui::OpenPopup("Confirm Delete");
+        openDeletePopup = false;
     }
 
     if (ImGui::Button("Close"))
@@ -49,6 +56,8 @@ void CategoryView::render()
         if (ImGui::Button("Yes"))
         {
             manager.removeCategory(categoryToDelete);
+            manager.saveToFile("data/data.json");
+            
             categoryToDelete = 0;
             ImGui::CloseCurrentPopup();
         }
