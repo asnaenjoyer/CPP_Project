@@ -6,5 +6,6 @@
         "-DVCPKG_TARGET_TRIPLET=x64-mingw-static",
         "-DVCPKG_HOST_TRIPLET=x64-mingw-static",
         "-DVCPKG_OVERLAY_TRIPLETS=D:/vcpkg/triplets/community"
-    ]
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:pyenv"
 }

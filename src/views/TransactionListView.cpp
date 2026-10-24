@@ -63,10 +63,15 @@ void TransactionListView::render()
             ImGui::PopID();
         }
 
+        ImGui::TableNextRow(ImGuiTableRowFlags_None);
+
+        ImGui::TableSetColumnIndex(0);
+        ImGui::TextUnformatted("TOTAL");
+
+        ImGui::TableSetColumnIndex(2);
+        ImGui::Text("%s%.2f UAH", total < 0 ? "-" : "+", std::abs(total));
+
         ImGui::EndTable();
-        
-        ImGui::Separator();
-        ImGui::Text("Total: %.2f UAH", total);
 
         for (unsigned int id : transactionsToDelete)
             manager.removeTransaction(id);
