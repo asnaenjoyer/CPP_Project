@@ -1,4 +1,6 @@
 #pragma once
+#include <imgui.h>
+
 #include "../ExpenseManager.hpp"
 
 class TransactionListView
@@ -12,8 +14,13 @@ private:
     char currency[8] = "UAH";
     int transactionType = 1;
     int selectedCategory = 0;
+    ImGuiTableSortSpecs* sortSpecs;
 
-    void renderAddTransaction();
+    std::vector<Transaction> transactions;
+    int cachedDataVersion = -1;
+
+    std::vector<Transaction> sortTransactions(std::vector<Transaction> transactions, ImGuiTableSortSpecs* sortSpecs);
+    double convertToMajorUnits(std::int64_t amountMinorUnits, TransactionType type);
 
 public:
     explicit TransactionListView(ExpenseManager& manager);

@@ -16,6 +16,8 @@ class ExpenseManager
         static unsigned int nextTransactionId;
         static unsigned int nextCategoryId;
 
+        int data_version = 0;
+
     public:
         void addTransaction(unsigned int categoryId, std::int64_t amountMinorUnits,
                             const std::string& name, TransactionType type,
@@ -34,4 +36,6 @@ class ExpenseManager
 
         bool saveToFile(const std::string& path) const;
         bool loadFromFile(const std::string& path);
+
+        int getDataVersion() const { return data_version; }
 };

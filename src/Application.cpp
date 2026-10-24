@@ -4,6 +4,7 @@
 #include <imgui_impl_sdl3.h>
 #include <imgui_impl_sdlrenderer3.h>
 
+
 Application::Application()
     : expenseView(expenseManager) {}
 
@@ -28,8 +29,18 @@ bool Application::init()
     if (!renderer)
         return false;
 
+    SDL_SetRenderVSync(renderer, 1);
+
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
+
+    ImGuiIO& io = ImGui::GetIO();
+
+    io.Fonts->AddFontFromFileTTF(
+        "assets/fonts/Roboto-Regular.ttf",
+        18.0f
+    );
+
     ImGui::StyleColorsDark();
 
     if (!ImGui_ImplSDL3_InitForSDLRenderer(window, renderer))

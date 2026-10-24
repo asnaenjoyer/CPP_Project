@@ -14,6 +14,7 @@ void ExpenseManager::addTransaction(unsigned int categoryId, std::int64_t amount
                                     const std::string& currency, const std::string& date) 
 {
     transactions.emplace_back(nextTransactionId++, categoryId, amountMinorUnits, name, type, currency, date);
+    data_version++;
 }
 
 void ExpenseManager::removeTransaction(unsigned int id) 
@@ -21,11 +22,13 @@ void ExpenseManager::removeTransaction(unsigned int id)
     transactions.erase(std::remove_if(transactions.begin(), transactions.end(),
         [id](const Transaction& t) { return t.getId() == id; }),
         transactions.end());
+    data_version++;
 }
 
 void ExpenseManager::addCategory(const std::string& name) 
 {
     categories.emplace_back(nextCategoryId++, name);
+    data_version++;
 }
 
 void ExpenseManager::removeCategory(unsigned int id) 
@@ -33,6 +36,7 @@ void ExpenseManager::removeCategory(unsigned int id)
     categories.erase(std::remove_if(categories.begin(), categories.end(),
         [id](const Category& c) { return c.getId() == id; }),
         categories.end());
+    data_version++;
 }
 
 const std::vector<Transaction>& ExpenseManager::getTransactions() const
@@ -140,6 +144,8 @@ bool ExpenseManager::loadFromFile(const std::string& path)
 
         categories = std::move(loadedCategories);
         transactions = std::move(loadedTransactions);
+
+        data_version++;
 
         nextCategoryId = 1;
         for (const auto& category : categories)
