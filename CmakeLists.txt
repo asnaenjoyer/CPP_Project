@@ -17,6 +17,7 @@ add_executable(Project src/main.cpp
                     src/views/TransactionListView.cpp
                     src/views/AddTransactionView.cpp
                     src/views/CategoryView.cpp
+                    src/views/FilterView.cpp
                     src/Application.cpp)
 
 target_include_directories(Project PRIVATE "${CMAKE_SOURCE_DIR}/include")

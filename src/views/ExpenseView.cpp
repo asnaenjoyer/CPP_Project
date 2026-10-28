@@ -3,9 +3,11 @@
 #include <imgui.h>
 
 ExpenseView::ExpenseView(ExpenseManager& manager)
-    : transactionListView(manager),
+    : expenseManager(manager),
+      transactionListView(manager),
       addTransactionView(manager),
-      categoryView(manager) {}
+      categoryView(manager),
+      filterView(manager, filter) {}
 
 void ExpenseView::render()
 {
@@ -27,12 +29,18 @@ void ExpenseView::render()
     if (ImGui::Button("Manage Categories"))
         ImGui::OpenPopup("Manage Categories");
 
+    ImGui::SameLine();
+
+    if (ImGui::Button("Filter"))
+        ImGui::OpenPopup("Filter Transactions");
+
     addTransactionView.render();
     categoryView.render();
+    filterView.render();
 
     ImGui::Spacing();
 
-    transactionListView.render();
+    transactionListView.render(expenseManager.getFilteredTransactions(filter));
 
     ImGui::End();
 }

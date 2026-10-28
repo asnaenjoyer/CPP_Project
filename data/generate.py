@@ -1,11 +1,15 @@
-
+import sys
 import json
 import random
 from datetime import date, timedelta
 from pathlib import Path
 
 OUTPUT = Path("data.json")
-COUNT = 200
+try:
+    COUNT = int(sys.argv[1]) if len(sys.argv) > 1 else 10
+except ValueError:
+    print("COUNT must be an integer | COUNT = 10")
+    COUNT = 10
 
 categories = [
     {"id": 1, "name": "Salary"},

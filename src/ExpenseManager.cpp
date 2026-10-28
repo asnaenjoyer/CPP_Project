@@ -33,6 +33,9 @@ void ExpenseManager::addCategory(const std::string& name)
 
 void ExpenseManager::removeCategory(unsigned int id) 
 {
+    transactions.erase(std::remove_if(transactions.begin(), transactions.end(),
+        [id](const Transaction& t) { return t.getCategoryId() == id; }),
+        transactions.end());
     categories.erase(std::remove_if(categories.begin(), categories.end(),
         [id](const Category& c) { return c.getId() == id; }),
         categories.end());
@@ -44,11 +47,31 @@ const std::vector<Transaction>& ExpenseManager::getTransactions() const
     return transactions;
 }
 
-std::vector<Transaction> ExpenseManager::getTransactions(unsigned int categoryId) const
+const std::vector<Transaction> ExpenseManager::getFilteredTransactions(const Filter& filter) const
 {
     std::vector<Transaction> filteredTransactions;
     std::copy_if(transactions.begin(), transactions.end(), std::back_inserter(filteredTransactions),
-        [categoryId](const Transaction& t) { return t.getCategoryId() == categoryId; });
+        [&filter](const Transaction& t) {
+            bool matchesCategory = filter.categoryId == 0 ||
+                t.getCategoryId() == filter.categoryId;
+
+            bool matchesType = filter.type == TransactionTypeFilter::ALL ||
+                (filter.type == TransactionTypeFilter::INCOME &&
+                t.getType() == TransactionType::INCOME) ||
+                (filter.type == TransactionTypeFilter::EXPENSE &&
+                t.getType() == TransactionType::EXPENSE);
+
+            bool matchesName = filter.name.empty() ||
+                t.getName().find(filter.name) != std::string::npos;
+
+            double amount = t.getAmountMinorUnits() / 100.0;
+
+            bool matchesAmount =
+                (filter.minAmount <= 0 || amount >= filter.minAmount) &&
+                (filter.maxAmount <= 0 || amount <= filter.maxAmount);
+
+            return matchesCategory && matchesType && matchesName && matchesAmount;
+        });
     return filteredTransactions;
 }
 

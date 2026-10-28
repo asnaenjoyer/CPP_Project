@@ -3,13 +3,24 @@
 #include "TransactionListView.hpp"
 #include "AddTransactionView.hpp"
 #include "CategoryView.hpp"
+#include "FilterView.hpp"
+#include "models/Filter.hpp"
 
 class ExpenseView
 {
 private:
+    ExpenseManager& expenseManager;
+
+    int cachedDataVersion = -1;
+    std::vector<Transaction> transactions;
     TransactionListView transactionListView;
+
     AddTransactionView addTransactionView;
+
     CategoryView categoryView;
+
+    Filter filter = Filter();
+    FilterView filterView;
 
     bool windowOpen = true;
 

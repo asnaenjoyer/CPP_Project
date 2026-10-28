@@ -8,8 +8,10 @@
 TransactionListView::TransactionListView(ExpenseManager& manager)
     : manager(manager) {}
 
-void TransactionListView::render()
+void TransactionListView::render(const std::vector<Transaction>& transactions)
 {
+    std::vector<Transaction> sortedTransactions = transactions;
+
     if (ImGui::BeginTable("Transactions", 5,
         ImGuiTableFlags_Borders |
         ImGuiTableFlags_RowBg |
@@ -25,17 +27,9 @@ void TransactionListView::render()
 
         sortSpecs = ImGui::TableGetSortSpecs();
 
-        bool dataChanged = cachedDataVersion != manager.getDataVersion();
-
-        if (dataChanged)
+        if (sortSpecs && sortSpecs->SpecsCount > 0 && sortSpecs->Specs[0].ColumnIndex != 4)
         {
-            transactions = manager.getTransactions();
-            cachedDataVersion = manager.getDataVersion();
-        }
-
-        if (sortSpecs && (dataChanged || sortSpecs->SpecsDirty))
-        {
-            transactions = sortTransactions(transactions, sortSpecs);
+            sortedTransactions = sortTransactions(sortedTransactions, sortSpecs);
             sortSpecs->SpecsDirty = false;
         }
 
@@ -43,7 +37,7 @@ void TransactionListView::render()
 
         double total = 0.0;
 
-        for (const auto& transaction : transactions)
+        for (const auto& transaction : sortedTransactions)
         {
             double amount = transaction.getAmountMinorUnits() / 100.0;
 

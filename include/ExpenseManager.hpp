@@ -6,6 +6,7 @@
 
 #include "models/Transaction.hpp"
 #include "models/Category.hpp"
+#include "models/Filter.hpp"
 
 class ExpenseManager 
 {
@@ -28,7 +29,8 @@ class ExpenseManager
         void removeCategory(unsigned int id);
 
         const std::vector<Transaction>& getTransactions() const;
-        std::vector<Transaction> getTransactions(unsigned int categoryId) const;
+
+        const std::vector<Transaction> getFilteredTransactions(const Filter& filter) const;
 
         const std::vector<Category>& getCategories() const;
 

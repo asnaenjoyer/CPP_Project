@@ -1,16 +1,8 @@
 {
     "categories": [
         {
-            "id": 1,
-            "name": "Salary"
-        },
-        {
             "id": 2,
             "name": "Games"
-        },
-        {
-            "id": 3,
-            "name": "Food"
         },
         {
             "id": 4,
@@ -25,5 +17,1599 @@
             "name": "Housing"
         }
     ],
-    "transactions": []
+    "transactions": [
+        {
+            "amountMinorUnits": 2367,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-02-20",
+            "id": 1,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 66722,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-08-12",
+            "id": 2,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 4994,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-12-19",
+            "id": 3,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 50381,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-12-02",
+            "id": 4,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 2883,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-10-06",
+            "id": 6,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 23030,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-10-22",
+            "id": 8,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 30178,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-01-06",
+            "id": 9,
+            "name": "Subscription",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 44481,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-07-13",
+            "id": 10,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 63227,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-04-07",
+            "id": 12,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 119377,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-07-22",
+            "id": 13,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 23856,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-04-18",
+            "id": 16,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 74401,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-06-02",
+            "id": 17,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 18275,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-07-29",
+            "id": 18,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 145265,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-07-05",
+            "id": 19,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 120926,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-08-17",
+            "id": 21,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 9746,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-10-07",
+            "id": 25,
+            "name": "Subscription",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 1058,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-06-24",
+            "id": 26,
+            "name": "Fuel",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 9045,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-04-20",
+            "id": 27,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 10517,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-10-23",
+            "id": 30,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 101671,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-01-22",
+            "id": 31,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 13490,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-12-15",
+            "id": 32,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 54289,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-04-19",
+            "id": 33,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 98864,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-08-16",
+            "id": 34,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 96707,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-07-23",
+            "id": 37,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 7887,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-02-21",
+            "id": 40,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 656,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-09-02",
+            "id": 41,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 6108,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-04-04",
+            "id": 42,
+            "name": "Train ticket",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 14027,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-05-15",
+            "id": 43,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 7322,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-11-14",
+            "id": 44,
+            "name": "Taxi",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 13042,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-10-08",
+            "id": 45,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 4875,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-06-04",
+            "id": 46,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 16775,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-01-17",
+            "id": 47,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 50675,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-10-20",
+            "id": 48,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 8075,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-07-08",
+            "id": 50,
+            "name": "Train ticket",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 6799,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-03-27",
+            "id": 52,
+            "name": "Dota2",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 61654,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-02-21",
+            "id": 53,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 33552,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-10-23",
+            "id": 54,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 24128,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-03-01",
+            "id": 55,
+            "name": "Dota2",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 14990,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-03-21",
+            "id": 56,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 68707,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-10-04",
+            "id": 57,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 5388,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-03-27",
+            "id": 58,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 6556,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-10-19",
+            "id": 59,
+            "name": "Taxi",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 114159,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-03-09",
+            "id": 60,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 19982,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-10-04",
+            "id": 61,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 14805,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-09-18",
+            "id": 62,
+            "name": "Train ticket",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 36177,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-12-23",
+            "id": 63,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 9517,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-05-13",
+            "id": 64,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 49871,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-09-14",
+            "id": 65,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 26827,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-07-19",
+            "id": 66,
+            "name": "Subscription",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 621,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-08-06",
+            "id": 67,
+            "name": "Taxi",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 4533,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-07-06",
+            "id": 68,
+            "name": "Fuel",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 26681,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-07-27",
+            "id": 69,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 4614,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-04-15",
+            "id": 70,
+            "name": "Subscription",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 5157,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-11-21",
+            "id": 71,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 39250,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-01-30",
+            "id": 72,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 41411,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-08-19",
+            "id": 74,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 117655,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-03-03",
+            "id": 75,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 4256,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-09-20",
+            "id": 76,
+            "name": "Taxi",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 13678,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-03-11",
+            "id": 78,
+            "name": "Taxi",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 16434,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-06-02",
+            "id": 81,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 36719,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-05-19",
+            "id": 82,
+            "name": "Cinema",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 140014,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-05-28",
+            "id": 83,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 24930,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-07-30",
+            "id": 84,
+            "name": "Dota2",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 12086,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-04-09",
+            "id": 85,
+            "name": "Train ticket",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 2210,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-08-22",
+            "id": 86,
+            "name": "Fuel",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 14877,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-09-21",
+            "id": 89,
+            "name": "Train ticket",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 118497,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-07-09",
+            "id": 90,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 88914,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-11-02",
+            "id": 91,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 10951,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-09-27",
+            "id": 92,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 123718,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-04-28",
+            "id": 93,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 131377,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-01-27",
+            "id": 94,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 17501,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-05-26",
+            "id": 95,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 21636,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-08-19",
+            "id": 96,
+            "name": "Dota2",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 15515,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-05-19",
+            "id": 97,
+            "name": "Subscription",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 19794,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-03-19",
+            "id": 98,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 19987,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-10-14",
+            "id": 99,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 1869,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-10-01",
+            "id": 100,
+            "name": "Train ticket",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 71996,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-11-06",
+            "id": 101,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 5119,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-01-11",
+            "id": 102,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 34686,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-06-11",
+            "id": 103,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 6975,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-01-12",
+            "id": 105,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 9401,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-10-11",
+            "id": 106,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 22094,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-09-12",
+            "id": 107,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 14577,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-08-20",
+            "id": 108,
+            "name": "Train ticket",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 35964,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-06-09",
+            "id": 109,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 122585,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-01-18",
+            "id": 111,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 32616,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-02-08",
+            "id": 112,
+            "name": "Cinema",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 12475,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-09-29",
+            "id": 114,
+            "name": "Subscription",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 14594,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-06-28",
+            "id": 115,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 4675,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-07-31",
+            "id": 116,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 4740,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-05-21",
+            "id": 118,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 125097,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-07-26",
+            "id": 119,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 1923,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-02-06",
+            "id": 120,
+            "name": "Taxi",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 2334,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-07-31",
+            "id": 121,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 28448,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-09-05",
+            "id": 126,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 120863,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-11-29",
+            "id": 129,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 80570,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-04-14",
+            "id": 132,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 18757,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-02-18",
+            "id": 133,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 9946,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-08-13",
+            "id": 134,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 13868,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-02-04",
+            "id": 135,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 39033,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-01-18",
+            "id": 138,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 38402,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-03-07",
+            "id": 139,
+            "name": "Cinema",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 52191,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-12-27",
+            "id": 142,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 4357,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-03-21",
+            "id": 143,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 5634,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-10-07",
+            "id": 144,
+            "name": "Taxi",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 2245,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-06-20",
+            "id": 146,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 16664,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-04-10",
+            "id": 147,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 2836,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-08-16",
+            "id": 148,
+            "name": "Fuel",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 2663,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-08-03",
+            "id": 149,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 149956,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-06-19",
+            "id": 151,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 51692,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-12-02",
+            "id": 153,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 32696,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-03-31",
+            "id": 154,
+            "name": "Cinema",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 11334,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-01-25",
+            "id": 155,
+            "name": "Train ticket",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 23135,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-05-12",
+            "id": 156,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 17817,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-04-19",
+            "id": 157,
+            "name": "Subscription",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 126544,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-06-05",
+            "id": 158,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 14795,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-09-17",
+            "id": 161,
+            "name": "Fuel",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 116677,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-10-26",
+            "id": 163,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 3907,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-09-29",
+            "id": 165,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 3165,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-12-10",
+            "id": 166,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 68053,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-05-17",
+            "id": 169,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 37879,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-02-27",
+            "id": 170,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 95629,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-06-29",
+            "id": 173,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 111662,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-02-16",
+            "id": 174,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 20905,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-10-13",
+            "id": 176,
+            "name": "Dota2",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 13256,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-05-30",
+            "id": 177,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 3658,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-03-14",
+            "id": 178,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 28669,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-10-21",
+            "id": 179,
+            "name": "Cinema",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 2172,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-08-14",
+            "id": 182,
+            "name": "Taxi",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 2143,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-06-29",
+            "id": 183,
+            "name": "Dota2",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 12059,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-05-16",
+            "id": 184,
+            "name": "Cinema",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 28010,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-02-16",
+            "id": 185,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 13704,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-06-24",
+            "id": 187,
+            "name": "Cinema",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 93790,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-10-20",
+            "id": 188,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 6028,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-05-13",
+            "id": 190,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 8469,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-10-12",
+            "id": 192,
+            "name": "Fuel",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 33297,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-02-02",
+            "id": 193,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 16534,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-04-06",
+            "id": 194,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 28912,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-08-10",
+            "id": 195,
+            "name": "Dota2",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 86678,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-02-13",
+            "id": 196,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 5171,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-08-09",
+            "id": 197,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 2607,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-05-31",
+            "id": 198,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 15325,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-03-28",
+            "id": 201,
+            "name": "Dota2",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 9783,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-04-27",
+            "id": 202,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 12171,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-12-30",
+            "id": 203,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 6469,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-01-29",
+            "id": 207,
+            "name": "Train ticket",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 1913,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-09-15",
+            "id": 209,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 9294,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2026-09-01",
+            "id": 210,
+            "name": "Bus tickets",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 6724,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-09-28",
+            "id": 211,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 7103,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-06-24",
+            "id": 212,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 100203,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-08-09",
+            "id": 213,
+            "name": "Rent",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 24560,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-03-17",
+            "id": 214,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 28910,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-06-20",
+            "id": 216,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 6259,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-04-08",
+            "id": 219,
+            "name": "Train ticket",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 21394,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-11-10",
+            "id": 220,
+            "name": "In-game purchase",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 37443,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-04-16",
+            "id": 221,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 49168,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-07-16",
+            "id": 222,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 19307,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-04-13",
+            "id": 223,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 21249,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-06-10",
+            "id": 225,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 31544,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-07-08",
+            "id": 226,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 16856,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-02-25",
+            "id": 227,
+            "name": "Steam games",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 72483,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-10-08",
+            "id": 229,
+            "name": "Electricity",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 25915,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-02-09",
+            "id": 230,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 19990,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2026-10-04",
+            "id": 231,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 35553,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-12-28",
+            "id": 232,
+            "name": "Bowling",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 8257,
+            "categoryId": 4,
+            "currency": "UAH",
+            "date": "2025-08-13",
+            "id": 234,
+            "name": "Taxi",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 149992,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-01-14",
+            "id": 235,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 27667,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-08-04",
+            "id": 236,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 58336,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-07-23",
+            "id": 237,
+            "name": "Water",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 19501,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2025-09-04",
+            "id": 242,
+            "name": "Game DLC",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 115040,
+            "categoryId": 6,
+            "currency": "UAH",
+            "date": "2025-11-27",
+            "id": 243,
+            "name": "Internet",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 4150,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-05-07",
+            "id": 244,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 20407,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-09-27",
+            "id": 246,
+            "name": "Dota2",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 18795,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-04-27",
+            "id": 247,
+            "name": "Cinema",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 3664,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2025-04-22",
+            "id": 248,
+            "name": "Cinema",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 23232,
+            "categoryId": 5,
+            "currency": "UAH",
+            "date": "2026-05-23",
+            "id": 249,
+            "name": "Concert",
+            "type": "expense"
+        },
+        {
+            "amountMinorUnits": 27167,
+            "categoryId": 2,
+            "currency": "UAH",
+            "date": "2026-03-04",
+            "id": 250,
+            "name": "Dota2",
+            "type": "expense"
+        }
+    ]
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../ExpenseManager.hpp"
+#include "ExpenseManager.hpp"
 
 class CategoryView
 {
