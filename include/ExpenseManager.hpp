@@ -40,4 +40,9 @@ class ExpenseManager
         bool loadFromFile(const std::string& path);
 
         int getDataVersion() const { return data_version; }
+
+        bool updateTransaction(unsigned int id, unsigned int categoryId,
+                       std::int64_t amountMinorUnits, const std::string& name,
+                       TransactionType type, const std::string& currency,
+                       const std::string& date);
 };

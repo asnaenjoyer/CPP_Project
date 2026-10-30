@@ -4,10 +4,12 @@
 
 ExpenseView::ExpenseView(ExpenseManager& manager)
     : expenseManager(manager),
-      transactionListView(manager),
+    editTransactionView(manager),
+      transactionListView(manager, editTransactionView),
       addTransactionView(manager),
       categoryView(manager),
-      filterView(manager, filter) {}
+      filterView(manager, filter)
+      {}
 
 void ExpenseView::render()
 {
@@ -37,6 +39,7 @@ void ExpenseView::render()
     addTransactionView.render();
     categoryView.render();
     filterView.render();
+    editTransactionView.render();
 
     ImGui::Spacing();
 

@@ -185,3 +185,25 @@ bool ExpenseManager::loadFromFile(const std::string& path)
         return false;
     }
 }
+
+bool ExpenseManager::updateTransaction(
+    unsigned int id,
+    unsigned int categoryId,
+    std::int64_t amountMinorUnits,
+    const std::string& name,
+    TransactionType type,
+    const std::string& currency,
+    const std::string& date)
+{
+    for (auto& transaction : transactions)
+    {
+        if (transaction.getId() == id)
+        {
+            transaction.update(categoryId, amountMinorUnits, name, type, currency, date);
+            ++data_version;
+            return true;
+        }
+    }
+
+    return false;
+}

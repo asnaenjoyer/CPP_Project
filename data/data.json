@@ -15,6 +15,10 @@
         {
             "id": 6,
             "name": "Housing"
+        },
+        {
+            "id": 7,
+            "name": "Salary"
         }
     ],
     "transactions": [
@@ -169,15 +173,6 @@
             "date": "2026-06-24",
             "id": 26,
             "name": "Fuel",
-            "type": "expense"
-        },
-        {
-            "amountMinorUnits": 9045,
-            "categoryId": 5,
-            "currency": "UAH",
-            "date": "2026-04-20",
-            "id": 27,
-            "name": "Bowling",
             "type": "expense"
         },
         {
@@ -631,15 +626,6 @@
             "type": "expense"
         },
         {
-            "amountMinorUnits": 10951,
-            "categoryId": 5,
-            "currency": "UAH",
-            "date": "2026-09-27",
-            "id": 92,
-            "name": "Bowling",
-            "type": "expense"
-        },
-        {
             "amountMinorUnits": 123718,
             "categoryId": 6,
             "currency": "UAH",
@@ -946,13 +932,13 @@
             "type": "expense"
         },
         {
-            "amountMinorUnits": 4357,
-            "categoryId": 5,
+            "amountMinorUnits": 102400,
+            "categoryId": 7,
             "currency": "UAH",
             "date": "2025-03-21",
             "id": 143,
-            "name": "Bowling",
-            "type": "expense"
+            "name": "Job",
+            "type": "income"
         },
         {
             "amountMinorUnits": 5634,

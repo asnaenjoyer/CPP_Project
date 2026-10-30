@@ -1,6 +1,7 @@
 #pragma once
 #include "ExpenseManager.hpp"
 #include "TransactionListView.hpp"
+#include "EditTransactionView.hpp"
 #include "AddTransactionView.hpp"
 #include "CategoryView.hpp"
 #include "FilterView.hpp"
@@ -10,16 +11,12 @@ class ExpenseView
 {
 private:
     ExpenseManager& expenseManager;
-
-    int cachedDataVersion = -1;
-    std::vector<Transaction> transactions;
-    TransactionListView transactionListView;
-
-    AddTransactionView addTransactionView;
-
-    CategoryView categoryView;
-
     Filter filter = Filter();
+
+    TransactionListView transactionListView;
+    AddTransactionView addTransactionView;
+    EditTransactionView editTransactionView;
+    CategoryView categoryView;
     FilterView filterView;
 
     bool windowOpen = true;

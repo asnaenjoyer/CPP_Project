@@ -30,4 +30,15 @@ class Transaction
         TransactionType getType() const { return type; }
         const std::string& getCurrency() const { return currency; }
         const std::string& getDate() const { return date; }
+        void update(unsigned int categoryId, std::int64_t amountMinorUnits,
+            const std::string& name, TransactionType type,
+            const std::string& currency, const std::string& date)
+        {
+            this->categoryId = categoryId;
+            this->amountMinorUnits = amountMinorUnits;
+            this->name = name;
+            this->type = type;
+            this->currency = currency;
+            this->date = date;
+        }
 };

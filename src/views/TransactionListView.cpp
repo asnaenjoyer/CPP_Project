@@ -5,8 +5,8 @@
 #include <vector>
 #include <algorithm>
 
-TransactionListView::TransactionListView(ExpenseManager& manager)
-    : manager(manager) {}
+TransactionListView::TransactionListView(ExpenseManager& manager, EditTransactionView& edit)
+    : manager(manager), editView(edit) {}
 
 void TransactionListView::render(const std::vector<Transaction>& transactions)
 {
@@ -69,6 +69,13 @@ void TransactionListView::render(const std::vector<Transaction>& transactions)
 
             if (ImGui::Button("Delete"))
                 transactionsToDelete.push_back(transaction.getId());
+            ImGui::SameLine();
+
+            if (ImGui::Button("Edit"))
+            {
+                editView.setTransactionId(transaction.getId());
+                editView.openView();
+            }
 
             ImGui::PopID();
         }
@@ -85,6 +92,7 @@ void TransactionListView::render(const std::vector<Transaction>& transactions)
 
         for (unsigned int id : transactionsToDelete)
             manager.removeTransaction(id);
+
 
         if (!transactionsToDelete.empty())
             manager.saveToFile("data/data.json");
